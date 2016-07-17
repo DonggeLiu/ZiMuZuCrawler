@@ -42,6 +42,11 @@ Remember using absolute path in Crontab.
 
 ##Recommendations:
 
+[Homebrew](http://brew.sh/) is a good way to install Python3
+
+==
+==
+==
 
 Donation:
 
