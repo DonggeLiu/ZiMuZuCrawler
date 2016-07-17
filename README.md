@@ -6,20 +6,20 @@ A web crawler for you to automatically check-in and download latest TV series fr
 ##Before start:
 
 
-1. [x] Check if you have <font color = blue>Python 3</font> installed. 
+1. [x] Check if you have `Python 3` installed. 
     
     If not, you can download latest version of Python 3 from [here](https://www.python.org/downloads/) 
     or via [homebrew](http://brew.sh/): `brew intall Python3`
 
 
-2. [x] Check if you have <font color = blue>BeautifulSoup4</font> installed. 
+2. [x] Check if you have `BeautifulSoup4` installed. 
     
     If not, you can use [pip](https://pip.pypa.io/en/latest/reference/pip_install/) (or pip3 if you have both Pyhton2 and Python3) to install it:
     `pip3 install beautifulsoup4`
 
-3. [x] Check if you have <font color = blue> requests </font> installed. 
+3. [x] Check if you have `requests` installed. 
     
-    If not, again you can use pip to install it:
+    If not, again you can use `pip` to install it:
     `pip3 install requests`
 
 4. [x] Change the 'account' and 'password' in the ZiMuZuCrawler.py to your own.
