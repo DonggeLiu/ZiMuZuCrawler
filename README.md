@@ -40,11 +40,6 @@ A web crawler for you to automatically check-in and download latest TV series fr
 	
 Remember using absolute path in Crontab.
 
-##Recommendations:
-
-[Homebrew](http://brew.sh/) is a good way to install Python3
-
-
 
 ##Donation:
 
