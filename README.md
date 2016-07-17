@@ -29,17 +29,24 @@ A web crawler for you to automatically check-in and download latest TV series fr
 
 ##Usage:
 
-1. You can run it directly in terminal with: 
-    `Python3 ZiMuZuCrawler.py`
-    
-    OR
-    
-2. Use [Crontab](http://www.adminschoice.com/crontab-quick-reference) to run it automatically, for example:
+1. Run `Python3 update.py` in terminal to store all the latest TV shows into `updatedResources.txt`
+2. Run `Python3 download.py` in terminal to download shows stored in previous step and keep record of the latest ones with `downloadedResources.txt`
 
-	  `45 7-8,19-21 * * * /usr/local/bin/Python3 /Users/.../ZimuZu/zimuzu.py >> /Users/.../ZiMuZu/dialog.log`
+
+##Recommandations: 
+
+    
+1. Use [Crontab](http://www.adminschoice.com/crontab-quick-reference) to update shows automatically, for example:
+
+	  `*/30 * * * * /usr/local/bin/python3 /Users/donggeliu/kit/ZiMuZu/update.py >> /Users/donggeliu/kit/ZiMuZu/dialog.log`
+
 	
 Remember using absolute path in Crontab.
 
+
+## TODO list:
+1. SMS notification
+2. aria2 integration
 
 ##Donation:
 
