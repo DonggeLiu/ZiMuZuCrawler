@@ -6,18 +6,18 @@ A web crawler for you to automatically check-in and download latest TV series fr
 ##Before start:
 
 
-1. [x] Check if you have [Python 3](https://docs.python.org/3/) installed. 
+1. [x] Check if you have [`Python 3`](https://docs.python.org/3/) installed. 
     
     If not, you can download latest version of Python 3 from [here](https://www.python.org/downloads/) 
     or via [homebrew](http://brew.sh/): `brew intall Python3`
 
 
-2. [x] Check if you have [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) installed. 
+2. [x] Check if you have [`BeautifulSoup4`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) installed. 
     
-    If not, you can use [pip](https://pip.pypa.io/en/latest/reference/pip_install/) (or pip3 if you have both Pyhton2 and Python3) to install it:
+    If not, you can use [`pip`](https://pip.pypa.io/en/latest/reference/pip_install/) (or `pip3` if you have both Pyhton 2 and Python 3) to install it:
     `pip3 install beautifulsoup4`
 
-3. [x] Check if you have [requests](http://docs.python-requests.org/en/master/) installed. 
+3. [x] Check if you have [`requests`](http://docs.python-requests.org/en/master/) installed. 
     
     If not, again you can use `pip` to install it:
     `pip3 install requests`
