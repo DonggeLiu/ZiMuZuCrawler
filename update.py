@@ -20,14 +20,12 @@ TODAY_SITE = 'http://www.zimuzu.tv/today'
 SIGNIN_SITE = "http://www.zimuzu.tv/user/sign"
 LOGIN_SITE = "http://www.zimuzu.tv/user/login/ajaxLogin"
 
-PREFERRED_MOIVE_CATEGORIES = ['µçÓ°']
+PREFERRED_MOIVE_CATEGORIES = ['ç”µå½±']
 PREFERRED_MOIVE_RESOLUTIONS = ["720P"]
 
-PREFERRED_SHOW_CATEGORIES = ['ÃÀ¾ç', 'ÈÕ¾ç', 'mini¾ç', 'µçÊÓ¾ç']
+PREFERRED_SHOW_CATEGORIES = ['ç¾Žå‰§', 'æ—¥å‰§', 'miniå‰§', 'ç”µè§†å‰§']
 PREFERRED_SHOW_RESOLUTIONS = ['HR-HDTV']
-
-# PREFERRED_SOURCE_TYPE = ['Â¿', '´Å', 'Ñ¸À×']
-PREFERRED_SOURCE_TYPE = ['Â¿', 'Ñ¸À×']
+PREFERRED_SOURCE_TYPE = ['é©´', 'è¿…é›·']
 
 
 USER_INFO = dict(account='your_account', password='your_password', url_back='http://www.zimuzu.tv/user/user')
@@ -197,7 +195,7 @@ def recognise_show_name(show_item):
 		chinese_name = re.findall(r'(.*?)\.[A-Za-z0-9\-]*', full_name[0], flags=re.IGNORECASE)
 		english_name = re.findall(r'\.([A-Za-z0-9\-].*)', full_name[0], flags=re.IGNORECASE)
 	else:
-		chinese_name = ['Î´Öª']
+		chinese_name = ['æœªçŸ¥']
 		english_name = ['Undetermined']
 	names = dict(english=english_name, chinese=chinese_name)
 
@@ -206,9 +204,9 @@ def recognise_show_name(show_item):
 def fix_chinese_name(chinese_name):
 	chinese_name = [x for x in chinese_name if x]
 
-	if len(chinese_name) == 0 or (len(chinese_name) == 1 and chinese_name[0] == 'ÖÐÓ¢'):
+	if len(chinese_name) == 0 or (len(chinese_name) == 1 and chinese_name[0] == 'ä¸­è‹±'):
 		chinese_name = ''
-	elif (len(chinese_name) == 1 and chinese_name[0] != 'ÖÐÓ¢'):
+	elif (len(chinese_name) == 1 and chinese_name[0] != 'ä¸­è‹±'):
 		chinese_name = chinese_name[0]
 	elif (len(chinese_name) == 2):
 		chinese_name = chinese_name[1]
@@ -269,10 +267,6 @@ def filter_from_updated(show_items, updated_show_items):
 					exists = True
 
 		if(not exists):
-			# print(show_item[0])
-			# print(show_item[1])
-			# print(show_item[2])
-			# print(show_item[5])
 			if (type(show_item[0]) == str) and (type(show_item[1]) == str):
 				new_show_items.append(show_item[0] + '\t\t' + show_item[1] + '\t\t' + show_item[2][0] + '\t\t' + show_item[2][1] + '\t\t' + show_item[5] + '\t\t' +'\n')
 	return new_show_items
@@ -358,5 +352,5 @@ if __name__ == '__main__':
 	new_show_items = check_new(show_items)
 	# print(new_show_items)
 	write_new_show_items(raw_updated_lines, new_show_items)
-	send_message(new_show_items)
+	# send_message(new_show_items)
 	print("Updated Successfully")
