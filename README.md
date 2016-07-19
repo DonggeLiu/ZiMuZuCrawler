@@ -20,7 +20,7 @@ A web crawler for you to automatically check-in and download latest TV series fr
 
 3. [x] Check if you have [`XUNLEI`](http://www.xunlei.com/) installed.
 
-    If you don't have one, you can apply from [here](http://dl.xunlei.com/)
+    If not, you can download from [here](http://dl.xunlei.com/)
 
 4. [x] Check if you have [`requests`](http://docs.python-requests.org/en/master/) installed. 
     
