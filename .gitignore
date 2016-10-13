@@ -1,5 +1,9 @@
-# The dialog file
+# The history files
 dialog.log
+updatedResources.txt
+downloadedResources.txt
 
 # The credential file
 credentials.config
+
+
