@@ -399,7 +399,7 @@ def in_same_series(drama_1, drama_2):
 def newer(drama_1, drama_2):
 	if drama_1[2] < drama_2[2]:
 		return False
-	if drama_1[3] <= drama_2[3]:
+	if (drama_1[2] == drama_2[2]) and (drama_1[3] <= drama_2[3]):
 		return False
 	return True
 
@@ -434,7 +434,7 @@ def send_message(new_drama_items):
 		os.system('terminal-notifier' + ' -message ' + notification + ' -title ' + "ZiMuZu")
 
 	if message:
-		os.system('Ruby /Users/donggeliu/kit/TelstraMessenger/send_to_me.rb' + ' ' + message)
+		os.system('Ruby ../TelstraMessenger/send_to_me.rb' + ' ' + message)
 		
 
 # ================================== Main =================================== #
@@ -458,5 +458,5 @@ if __name__ == '__main__':
 	# Stage 06
 	write_new_drama_items(raw_updated_lines, new_drama_items)
 	# Stage 07
-	# send_message(new_drama_items)
+	send_message(new_drama_items)
 	print("Updated Successfully")
