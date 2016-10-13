@@ -2,4 +2,4 @@
 dialog.log
 
 # The credential file
-credentials.config
+*.config
