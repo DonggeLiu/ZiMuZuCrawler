@@ -3,7 +3,11 @@ dialog.log
 updatedResources.txt
 downloadedResources.txt
 
+
 # The credential file
 credentials.config
 
-
+# Others
+Undergoing/
+VersionBackup/
+Icon
