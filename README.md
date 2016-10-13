@@ -32,9 +32,10 @@ A web crawler for you to automatically check-in and download latest TV series fr
     If you don't have one, you can apply from [here](http://www.zimuzu.tv/user/reg)
 
 ##Usage:
+1. In `credentials.config`, put your account name and password
 
-1. Run `Python3 update.py` in terminal to store all the latest TV shows into `updatedResources.txt`
-2. Run `Python3 download.py` in terminal to download shows stored in previous step and keep record of the latest ones within `downloadedResources.txt`
+2. Run `Python3 update.py` in terminal to store all the latest TV shows into `updatedResources.txt`
+3. Run `Python3 download.py` in terminal to download shows stored in previous step and keep record of the latest ones within `downloadedResources.txt`
 
 
 ##Recommandations: 
