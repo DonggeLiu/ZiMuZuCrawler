@@ -6,9 +6,10 @@ import time
 import copy
 
 
-DIRECTORY = '/Users/donggeliu/kit/ZiMuZu/'
-UPDATED_RESOURCES = DIRECTORY+'updatedResources.txt'
-DOWNLOADED_RESOURCES = DIRECTORY+'downloadedResources.txt'
+CURRENT_DIRECTORY = '/Users/donggeliu/kit/ZiMuZu/'
+UPDATED_RESOURCES = CURRENT_DIRECTORY+'updatedResources.txt'
+DOWNLOADED_RESOURCES = CURRENT_DIRECTORY+'downloadedResources.txt'
+XUNLEI_DIR = '/Applications/Thunder.app'
 
 
 # ================================================ Stage 01 ================================================ #
@@ -58,6 +59,11 @@ def download_all(drama_dict):
 
 	tmp_updated_drama = copy.copy(drama_dict['updated'])
 	tmp_downloaded_drama = copy.copy(drama_dict['downloaded'])
+	
+	#for drama in tmp_updated_drama:
+	#	if len(drama) == 1: continue
+	#	print(drama[0] + ' ' + drama[1] + ' ' + drama[2] + drama[3] + '\n')
+
 	for updated_drama in tmp_updated_drama:
 		# skip the first line (date line takes only one cell)
 		if len(updated_drama) == 1: continue
@@ -91,7 +97,7 @@ def newer(drama_1, drama_2):
 
 def download_drama(drama):
 	print(drama[0] + ' ' + drama[1] + ' ' + drama[2] + drama[3])
-	os.system('open /Applications/Thunder.app ' + '"' + drama[4] + '"')
+	os.system('open ' + XUNLEI_DIR + ' "' + drama[4] + '"')
 	time.sleep(5)
 
 
@@ -171,6 +177,7 @@ def format_downloaded_drama(drama):
 
 
 
+# ================================================ Main ================================================ #
 
 if __name__ == '__main__':
 	

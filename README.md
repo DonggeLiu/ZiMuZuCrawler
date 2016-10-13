@@ -49,13 +49,19 @@ Remember using absolute path in Crontab.
 
 
 ## TODO list:
-1. SMS notification
+1. ~~SMS notification~~
+    
+    This is currently avaiable within Australia 🇦🇺. Please contact me if needed.
+    
 2. aria2 integration
+
+ Hence you do not need ThunderDownload.
+
+3. Server deployment.
+
+ Hence your can enjoy every services here without pre-installations. This git won't be needed at that stage. 
 
 ##Donation:
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/DonggeLiu)
-
-
-
 
