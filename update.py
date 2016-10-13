@@ -458,5 +458,5 @@ if __name__ == '__main__':
 	# Stage 06
 	write_new_drama_items(raw_updated_lines, new_drama_items)
 	# Stage 07
-	send_message(new_drama_items)
+	# send_message(new_drama_items)
 	print("Updated Successfully")
