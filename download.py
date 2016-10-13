@@ -84,7 +84,14 @@ def download_all(drama_dict):
 
 
 def in_same_series(drama_1, drama_2):
-	return (drama_1[0] == drama_2[0]) or (drama_1[1] == drama_2[1])
+	if drama_1[0] and drama_2[0] and drama_1[1] and drama_2[1]:
+		return (drama_1[0] == drama_2[0]) or (drama_1[1] == drama_2[1]) or (drama_1[0] == drama_2[1]) or (drama_1[1] == drama_2[0])
+
+	if (not drama_1[1]) or (not drama_2[1]):
+		return (drama_1[0] == drama_2[0])
+
+	if (not drama_1[0]) or (not drama_2[0]):
+		return (drama_1[1] == drama_2[1])
 
 def newer(drama_1, drama_2):
 
