@@ -6,7 +6,7 @@ import time
 import copy
 
 
-CURRENT_DIRECTORY = '/Users/donggeliu/kit/ZiMuZu/'
+CURRENT_DIRECTORY = './'
 UPDATED_RESOURCES = CURRENT_DIRECTORY+'updatedResources.txt'
 DOWNLOADED_RESOURCES = CURRENT_DIRECTORY+'downloadedResources.txt'
 XUNLEI_DIR = '/Applications/Thunder.app'
