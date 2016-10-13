@@ -53,11 +53,15 @@ Remember using absolute path in Crontab.
     
     This is currently avaiable within Australia 🇦🇺. Please contact me if needed.
     
-2. aria2 integration
+2. Email notification
+
+    For those who are not living in Australia, you can get notificaitons via this.
+    
+3. aria2 integration
 
  Hence you do not need ThunderDownload.
 
-3. Server deployment.
+4. Server deployment.
 
  Hence your can enjoy every services here without pre-installations. This git won't be needed at that stage. 
 
